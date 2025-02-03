@@ -191,6 +191,19 @@ footer {
     margin: 5px 0;
     color: #d1d1d1;
 }
+.experience-details {
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.experience-details li {
+    margin: 5px 0;
+    color: #d1d1d1;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
 
 .experience-item strong {
     color: #ffffff; /* Text color set to white */
@@ -401,4 +414,39 @@ footer {
     line-height: 1.8;
     color: #d0d0d0;
     margin: 5px 0;
+}
+.resume-section {
+    margin-top: 20px;
+}
+
+.resume-button button {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 40px;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #ea8a14;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.resume-button button:hover {
+    background-color: #ea8a14;
+}
+
+.experience-details {
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.experience-details li {
+    margin: 5px 0;
+    color: #d1d1d1;
+    line-height: 1.6;
+    font-size: 16px;
 }

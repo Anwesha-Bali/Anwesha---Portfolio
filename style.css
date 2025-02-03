@@ -1,0 +1,404 @@
+/* Import the font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000; /* Background color set to black */
+    color: #ffffff; /* Text color set to white */
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+/* Header Navigation */
+header {
+    width: 100vw;
+    padding: 15px 0;
+    background-color: #000000; /* Background color set to black */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin: 0;
+}
+
+nav a {
+    color: #ffffff; /* Text color set to white */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+nav a:hover {
+    color: #000000;
+    background-color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px;
+    background-color: #000000; /* Background color set to black */
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    color: #ffffff; /* Text color set to white */
+}
+
+p {
+    font-size: 22px;
+    line-height: 1.8;
+    max-width: 700px;
+    color: #e0e0e0;
+}
+
+.highlight {
+    color: #ffffff; /* Text color set to white */
+    font-weight: bold;
+}
+
+/* About Me Section */
+.about-me {
+    padding: 60px 20px;
+    background-color: #000000; /* Background color set to black */
+    text-align: left;
+}
+
+.about-me h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ffffff; /* Text color set to white */
+}
+
+.about-me-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    width: 200px;
+    height: 515px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.about-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+}
+
+.box {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0); /* Transparent background */
+    color: #ffffff; /* Text color set to white */
+    border: 2px solid #ffffff; /* Optional border for emphasis */
+    border-radius: 12px;
+    font-size: 18px;
+    align-items: flex-end;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #000000; /* Background color set to black */
+    font-size: 12px;
+    color: #ffffff; /* Text color set to white */
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-me-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .about-image {
+        width: 80%;
+    }
+
+    .about-boxes {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+/* Experience Section */
+.experience {
+    padding: 60px 20px;
+    background-color: #000000; /* Background color set to black */
+    text-align: left;
+    color: #ffffff; /* Text color set to white */
+}
+
+.experience h2 {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.experience-item {
+    padding: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.experience-item h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: #ffffff; /* Text color set to white */
+}
+
+.experience-item p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #d1d1d1;
+}
+
+.experience-item strong {
+    color: #ffffff; /* Text color set to white */
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 60px 20px;
+    background-color: #000000; /* Background color set to black */
+    text-align: center;
+    color: #ffffff; /* Text color set to white */
+}
+
+.contact-section h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.icon-wrapper {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-wrapper img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.icon-wrapper img:hover {
+    transform: scale(1.2);
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 60px 20px;
+    background-color: #000000; /* Background color set to black */
+    text-align: center;
+    color: #ffffff; /* Text color set to white */
+}
+
+.projects-section h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: #ffffff; /* Text color set to white */
+}
+
+.project-list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.project-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    width: 300px;
+    min-height: 450px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    color: #ffffff; /* Text color set to white */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+    width: 100%;
+    height: 180px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.project-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff; /* Text color set to white */
+    text-align: center;
+}
+
+.project-description {
+    font-size: 16px;
+    color: #d1d1d1;
+    line-height: 1.5;
+}
+
+.project-tools {
+    font-size: 14px;
+    color: #ffffff; /* Text color set to white */
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.project-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.project-icons a img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.project-icons a img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .project-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 90%;
+    }
+
+    .project-icons {
+        gap: 10px;
+    }
+}
+/* skills section */
+.skills-section {
+    padding: 60px;
+    background-color: #0e0e0e;
+    color: #fff;
+    text-align: center;
+}
+
+.skills-section h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: fff;
+}
+
+.skills-flow {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.skill-step {
+    position: relative;
+    padding: 40px 0;
+    text-align: left;
+    padding-left: 60px;
+}
+
+.skill-step::before {
+    content: "";
+    position: absolute;
+    left: 28px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #444;
+}
+
+.circle {
+    position: absolute;
+    left: 20px;
+    width: 16px;
+    height: 16px;
+    background-color: #f0a500;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.skill-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #f4f4f4;
+}
+
+.skill-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-content li {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #d0d0d0;
+    margin: 5px 0;
+}

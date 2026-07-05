@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light: financial-print paper. Dark: market-terminal ink. */
+:root {
+  --paper: 248 239 226;
+  --paper-deep: 240 226 206;
+  --ink: 23 19 16;
+  --muted: 111 99 85;
+  --line: 220 201 174;
+  --accent: 11 107 69;
+  --accent-soft: 95 211 154;
+}
+
+.dark {
+  --paper: 18 16 13;
+  --paper-deep: 26 23 19;
+  --ink: 240 231 216;
+  --muted: 154 141 124;
+  --line: 62 55 45;
+  --accent: 95 211 154;
+  --accent-soft: 11 107 69;
+}
+
+@layer base {
+  body {
+    @apply bg-paper text-ink antialiased;
+  }
+  ::selection {
+    @apply bg-ink text-paper;
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply font-mono text-xs uppercase tracking-[0.14em] text-muted;
+  }
+  .btn {
+    @apply inline-flex items-center gap-2 border border-ink px-6 py-3.5 font-mono text-[13px] font-medium uppercase tracking-[0.06em] transition-colors;
+  }
+  .btn-solid {
+    @apply bg-ink text-paper hover:bg-accent hover:border-accent hover:text-paper;
+  }
+  .btn-ghost {
+    @apply bg-transparent text-ink hover:bg-ink hover:text-paper;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
